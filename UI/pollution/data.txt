@@ -1,0 +1,87 @@
+<?php 
+    if(!$conn){
+        die("cannot connect");
+    }
+    else{
+                $query="Select * from record where sno=".$_SESSION['sno'].";";
+                $result=mysqli_query($conn,$query);
+                $res= mysqli_fetch_assoc($result);
+                // echo $res['fname'];
+                // echo $res['sno'];
+                // echo $res['address'];
+                ?>
+                <table border="2" height="20%" width="40%">
+                    <th>Factory name</th>
+                    <th>Total Outlets</th>
+                    <th>Pan no.</th>
+                    <th>Serial no.</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Police station</th>
+                    <tr>
+                        <td>
+                            <?php echo $res['fname']?>
+                        </td>
+                        <td>
+                            <?php echo $res['toutlets']?>
+                        </td>
+                        <td>
+                            <?php echo $res['pno']?>
+                        </td>
+                        <td>
+                            <?php echo $res['sno']?>
+                        </td>
+                        <td>
+                            <?php echo $res['email']?>
+                        </td>
+                        <td>
+                            <?php echo $res['address']?>
+                        </td>
+                        <td>
+                            <?php echo $res['ps']?>
+                        </td>
+                    </tr>
+                </table>
+                <?php
+            }
+
+    ?>
+    <form method='post'>
+            <button name="logout">Logout</button>
+    </form>
+    <?php
+        if($_SERVER['REQUEST_METHOD']=="POST"){
+            if(isset($_POST['logout'])){
+                unset($_SESSION['sno']);
+                session_destroy();
+                header("Location: index.php");
+            }
+        }
+    ?>
+
+
+profile
+
+<h1 class="heading" style="text-align:center; font-size:48px; color:white">Welcome to your Profile</h1>
+      <p style="text-align:center; color:white">This page contains all your details</p>
+
+    $query="Select * from record where sno='".$_SESSION['sno']."';";
+                $result=mysqli_query($conn,$query);
+                $res= mysqli_fetch_assoc($result);
+
+
+                <h2 class="uppercase text-center text-[2.5rem] font-bold">Factory Name is</h2>
+            <p class="text"> <?php echo $res['fname']?></p>
+
+            <h2 class="uppercase text-center text-[2.5rem] font-bold">Total <br>outlets is</h2>
+            <p class="text"><?php echo $res['toutlets']?></p>
+
+            <h2 class="uppercase text-center text-[2.5rem] font-bold">Your Serial no. is</h2>
+            <p class="text"><?php echo $res['sno']?></p>
+
+            <h2 class="uppercase text-center text-[2.5rem] font-bold">Your Email is</h2>
+            <p class="text"><?php echo $res['email']?></p>
+
+
+            <h2 class="uppercase text-center text-[2.5rem] font-bold">Your age is</h2>
+            <p class="text"><?php echo $res['address']?></p>

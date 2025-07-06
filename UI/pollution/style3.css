@@ -1,0 +1,176 @@
+/* body{
+    margin:0;
+    padding: 0;
+    background-image: linear-gradient(to right,rgb(17, 199, 199),rgb(103, 245, 164),rgb(254, 219, 80));
+}
+
+.dashboard{
+    margin:0;
+    padding: 0;
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right,rgb(136, 98, 233),rgb(12, 160, 103),rgb(7, 150, 64));
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a > button[name="logout"] {
+    border: none !important;
+    outline:none !important;
+    background: none !important;
+    
+}
+a > button[name="cpassword"] {
+    border: none !important;
+    outline:none !important;
+    background: none !important;
+    
+}
+a > button[name="caccount"] {
+    border: none !important;
+    outline:none !important;
+    background: none !important;
+    
+}
+.dasboardnavbar button{
+    font-size: 28px;
+    padding: 10px;
+}
+.dasboardnavbar{
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    background-image:linear-gradient(to right,blue,purple);
+    top: 70%;
+    right:5%;
+    font-size: 28px;
+}
+.dasboardnavbar a{
+    padding-left: 50px;
+}
+.dasboardnavbar a:hover{
+    color:white;
+}
+.dashboardbody{
+    margin-left: 100px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.data{
+    height: 450px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.data button{
+    width:150px;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(38, 87, 179),rgb(64, 64, 255));
+    border-color: rgb(38, 87, 179);
+    font-size: 18px;
+} */
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: wheat;
+}
+
+.dashboard{
+    margin:0;
+    padding: 0;
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right,rgb(1, 1, 1),rgb(74, 69, 69));
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a > button[name="logout"] {
+    border: none !important;
+    outline:none !important;
+    background: none !important;
+    
+}
+a > button[name="cpassword"] {
+    border: none !important;
+    outline:none !important;
+    background: none !important;
+    
+}
+a > button[name="caccount"] {
+    border: none !important;
+    outline:none !important;
+    background: none !important;
+    
+}
+.dasboardnavbar button{
+    font-size: 28px;
+    padding: 10px;
+}
+/* button:focus {
+    border: none;
+    outline: none;
+}
+
+button:focus{
+    outline:none !important;
+} */
+.dasboardnavbar{
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 50px;
+    background-image:linear-gradient(to left,rgb(227, 82, 15),rgb(222, 145, 14));
+    top: 70%;
+    right:5%;
+    font-size: 28px;
+}
+.dasboardnavbar a{
+    padding-left: 50px;
+}
+.dasboardnavbar a:hover{
+    color:white;
+}
+.dashboardbody{
+    margin-left: 100px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.data{
+    height: 450px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.data button{
+    width:150px;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(176, 174, 174),rgb(43, 43, 43),rgb(0, 0, 0));
+    border-color: rgb(0, 0, 0);
+    font-size: 18px;
+    color: white;
+}

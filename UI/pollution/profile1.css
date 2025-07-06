@@ -1,0 +1,34 @@
+body{
+    margin:0;
+    padding: 0;
+    /* background-image: linear-gradient(to right,rgb(0, 0, 0),rgb(0, 24, 142),rgb(0, 0, 0)); */
+}
+.adminbody{
+    background-color: white;
+}
+.container2{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sec{
+    background-image: linear-gradient(to right,rgb(17, 199, 199),rgb(103, 245, 164),rgb(254, 219, 80));
+    margin-top:50px;
+    height: 350px;
+    width:250px;
+    text-align: center;
+    position: relative;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    margin-top: 50px;
+}
+.textdata, .heading{
+    font-size: 28px;
+}

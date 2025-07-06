@@ -1,0 +1,129 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    height: 100%;
+    width:100%;
+}
+.sidebar{
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+    color: white;
+    position: fixed;
+    height: 100%;
+}
+.adminimg{
+    background-color: rgb(62, 66, 66);
+    display: flex;
+    justify-content: space-around;
+}
+.horizontalbar{
+    background-color: rgb(255, 106, 0);
+    position: fixed;
+    /* width: 100%; */
+    height: 70px;
+    width:1220px;
+    color: white;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.horizontalbar button{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}
+button{
+    outline:none !important;
+    /* background: none !important; */
+}
+button[name="dashboard"]  {
+    outline:none !important;
+    background: none !important;
+    border-color: white;
+    border-radius: 10px;
+    width:220px;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+}
+.company ,.table,.graph{
+    /* outline:none !important;
+    background: none !important; */
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width:217px;
+    margin-top: 15px;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.option button{
+    font-size: 28px;
+    padding: 10px;
+    background-color: black;
+}
+.adminpage{
+    position: absolute;
+    left: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.adminbody{
+    height: 1000px;
+    width:  900px;
+    margin-top: 100px;
+}
+#submenu1,#submenu2,#submenu3{
+    display:none;
+}
+#submenu1 button{
+    margin-left: 50px;
+    color:white;
+    border-color: white;
+    font-size: 20px;
+    width:200px;
+}
+#submenu2 button{
+    margin-left: 50px;
+    color:white;
+    border-color: white;
+    font-size: 20px;
+    width:200px;
+}
+#submenu3 button{
+    margin-left: 50px;
+    color:white;
+    border-color: white;
+    font-size: 20px;
+    width:200px;
+}
+.data{
+    height: 150px;
+    width:300px;
+    background-color: rgb(255, 198, 91);
+    border-radius: 10px;
+    margin: 30px;
+}
+.data button{
+    margin-left: 50px;
+    color:rgb(0, 0, 0);
+    border-color: white;
+    font-size: 20px;
+    width:150px;
+    background-color: rgb(255, 0, 0);
+    padding: 15px;
+}
+.adminmain{
+    display: flex;
+    flex-direction: row;
+}
